@@ -1,7 +1,6 @@
 "use strict";
 
 const elTemplate = document.querySelector(".template").content;
-// const elPagiTemplate = document.querySelector(".pagi-temlate").content;
 const elPagination = document.querySelector(".pagination");
 const elContainer = document.querySelector(".container");
 const elSpin = document.querySelector(".spin");
@@ -11,6 +10,7 @@ const elShow = document.querySelector(".show");
 const elInput = document.querySelector("input");
 const sortBtn = document.querySelector(".sort");
 const bookmarkBtn = document.querySelector(".bookmark__btn");
+const elBookmarkList = document.querySelector(".bookmark__list");
 const bookmarkList = document.querySelector(".book");
 const showModal = document.querySelector(".info__btn");
 const modal = document.querySelector(".modal");
@@ -21,7 +21,7 @@ let search = "java";
 let orderBy = "relevance";
 let page = "1";
 
-const bookmark = [];
+const bookmarks = [];
 const pagination = [];
 
 const renderBooks = function (arr, htmlElement) {
@@ -97,7 +97,6 @@ const getBooks = async function () {
     `https://www.googleapis.com/books/v1/volumes?q=${search}&orderBy=${orderBy}&page=${page}`
   );
   const data = await request.json();
-  console.log(data);
   if (data.items && data.items.length > 0) {
     renderBooks(data.items, elList);
   }
