@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Rubik:wght@400;500&display=swap");
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.input {
+  background: #f8fafd;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 13px 550px 14px 55px;
+  border: none;
+}
+.icon {
+  position: absolute;
+  left: 440px;
+  top: 30px;
+}
+.btn {
+  padding: 7px 28px;
+  margin-left: 10px;
+}
+.sort-section {
+  padding: 0 22px;
+}
+.sort {
+  background: #a6b0c3;
+  border-radius: 4px;
+  padding: 7px 18px;
+}
+.sort__title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  margin-left: 5px;
+}
+.sort:hover {
+  cursor: pointer;
+}
+.show {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  margin-left: 220px;
+}
+.book__right {
+  width: 1100px;
+  background-color: #f8fafd;
+  margin-left: auto;
+  padding-left: 100px;
+  margin-top: 0;
+  padding: 30px 0;
+}
+.book {
+  position: relative;
+  width: 280px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #e3e6eb;
+  padding: 13px 15px 13px 18px;
+  margin-left: 30px;
+  margin-top: 33px;
+}
+.img {
+  background: #f8fafd;
+  border-radius: 5px;
+  width: 250px;
+  height: 240px;
+  padding: 18px 28px 18px 20px;
+}
+.book__img {
+  border-radius: 5px;
+}
+.book__name {
+  margin-top: 20px;
+}
+.book__author,
+.book__year {
+  font-family: "Noto Sans";
+  font-style: normal;
+  color: #757881;
+  font-size: 13px;
+  line-height: 18px;
+}
+.btns {
+  margin-bottom: 12px;
+}
+.bookmark__btn,
+.info__btn,
+.read__btn {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background: #ffd80d;
+  border-radius: 4px;
+  color: black;
+  padding: 10px 28px;
+  border: none;
+  bottom: 10px;
+}
+.info__btn {
+  background: rgba(13, 117, 255, 0.05);
+  color: #0d75ff;
+}
+.read__btn {
+  background: #75828a;
+  color: white;
+  padding: 10px 106px;
+}
+.more-info__header,
+.modal-info__footer {
+  background-color: #f8fafd;
+}
+.modal-info__img {
+  margin-left: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+.modal__text {
+  font-family: "Rubik";
+  font-size: 14px;
+  line-height: 17px;
+  color: #222531;
+  padding: 15px;
+}
+.modal__btn {
+  width: 110px;
+  padding: 9px 38px;
+  margin-left: 320px;
+}
+.book__body {
+  z-index: 5;
+}
+.bookmark-section {
+  padding: 15px;
+}
+.bookmark-section__text {
+  width: 220px;
+  font-family: "Rubik";
+  font-size: 14px;
+  line-height: 155.6%;
+}
+.result {
+  margin-left: 8px;
+}
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(0, -50%);
+  width: 30%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.page-btns {
+  margin-left: 400px;
+}
+.page-num {
+  color: black;
+  font-weight: 700;
+}
+#prev,
+#next,
+.pagination {
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #c4cdd5;
+}
+.wrapper__bookmarks-result {
+  padding: 25px;
+  width: 268px;
+  border-right: 2px solid #e3e6eb;
+}
+
+.title-bookmark {
+  width: 125px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-bookmark {
+  width: 200px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+}
+
+.wrapper__books-list {
+  background-color: #f8fafd;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.book-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
